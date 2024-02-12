@@ -1,0 +1,10 @@
+./tester.csh Random |tr "\n" "," |sed 's/.$/\n/;s/,/, /g'
+./tester.csh Flush |tr "\n" "," |sed 's/.$/\n/;s/,/, /g'
+./tester.csh Straight |tr "\n" "," |sed 's/.$/\n/;s/,/, /g'
+./tester.csh House |tr "\n" "," |sed 's/.$/\n/;s/,/, /g'
+./tester.csh Pair |tr "\n" "," |sed 's/.$/\n/;s/,/, /g'
+./tester.csh 4 |tr "\n" "," |sed 's/.$/\n/;s/,/, /g'
+./tester.csh 3 |tr "\n" "," |sed 's/.$/\n/;s/,/, /g'
+./tester.csh 2 |tr "\n" "," |sed 's/.$/\n/;s/,/, /g'
+./tester.csh 1 |tr "\n" "," |sed 's/.$/\n/;s/,/, /g'
+
