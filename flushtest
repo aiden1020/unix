@@ -1,0 +1,9 @@
+cd $1
+ls|xargs -I {} fgrep -e {} ../allcards |cut -c 1-2 --complement
+ls|grep -c C>>temp
+ls|grep -c S>>temp
+ls|grep -c H>>temp
+ls|grep -c D>>temp
+echo "Flush!">flush
+paste <(fgrep 5 temp) flush|fgrep 5|cut -c 1-2 --complement
+rm flush temp
